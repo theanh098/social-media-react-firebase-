@@ -1,0 +1,25 @@
+.orionmo {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  .cmterName {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .cmtContent {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  .cmterAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+  }
+  .cmttimelay {
+    font-size: 10px;
+    color: blueviolet;
+    margin: 0 10px;
+  }
+}

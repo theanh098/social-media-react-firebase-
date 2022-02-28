@@ -1,0 +1,39 @@
+.personalHeader {
+  height: 161px;
+  width: 935px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  .personalImg {
+    flex: 1;
+    .imgHeader {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: 150px;
+      margin-right: 50px;
+    }
+  }
+  .personalInfo {
+    flex: 2.5;
+    .personalInfoTop {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .PHbtn {
+        width: 75px;
+        height: 30px;
+        border: unset;
+        margin-left: 10px;
+      }
+    }
+    .personalInfoBot {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

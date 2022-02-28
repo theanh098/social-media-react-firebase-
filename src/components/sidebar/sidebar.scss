@@ -1,0 +1,44 @@
+.sidebarContainer {
+  flex: 1;
+  width: 293px;
+  height: 625px;
+  margin-left: 50px;
+  margin-top: 50px;
+  .userCurrent {
+    display: flex;
+    align-items: center;
+    .userPhoto {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+    .switch {
+      margin-left: 80px;
+      color: rgb(58, 143, 247);
+    }
+  }
+  .recommendArea {
+    .recommendUser {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 13px;
+      }
+      .follow {
+        position: absolute;
+        left: 220px;
+        color: rgb(0, 149, 246);
+        font-size: 12px;
+      }
+    }
+  }
+}

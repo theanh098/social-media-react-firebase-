@@ -1,0 +1,12 @@
+.settingContainer {
+  .acinfo {
+    display: flex;
+    align-items: center;
+    .acphoto {
+      height: 60x;
+      width: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.login {
+  width: 350px;
+  margin: 150px auto;
+  .loginTop {
+    border: 0.5px solid rgb(219, 219, 219);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .loginLogo {
+      font-size: 40px;
+      text-align: center;
+    }
+    .formLogin {
+      display: flex;
+      flex-direction: column;
+      width: 258px;
+      margin: 0 auto;
+      position: relative;
+      .loginInput {
+        height: 36px;
+        margin-top: 8px;
+        border: 0.5px solid rgb(219, 219, 219);
+      }
+      .loginBtn {
+        height: 30px;
+        margin-top: 15px;
+        width: 258px;
+        background-color: #b2dffc;
+        border: 0.5px solid rgb(219, 219, 219);
+        border-radius: 5px;
+      }
+      .warning {
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+      }
+    }
+  }
+  .loginBot {
+    height: 63px;
+    margin-top: 20px;
+    border: 0.5px solid rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .lbBtn {
+      font-size: 15px;
+      font-weight: 23px;
+      color: #0095f6;
+      margin-left: 4px;
+    }
+  }
+}

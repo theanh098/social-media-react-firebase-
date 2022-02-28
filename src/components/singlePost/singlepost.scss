@@ -1,0 +1,106 @@
+.singlePostContainer {
+  position: fixed;
+  z-index: 1000;
+  .closeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 40px;
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .singlepostOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.25);
+  }
+  .singlePost {
+    display: flex;
+    width: 965px;
+    height: 575px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    .singlePostLeft {
+      flex: 2;
+      .postPhoto {
+        width: 461px;
+        height: 576px;
+        object-fit: cover;
+      }
+    }
+    .singlePostRight {
+      flex: 3;
+      border-left: 0.5px solid rgb(219, 219, 219);
+      .sPRTop {
+        display: flex;
+        align-items: center;
+        border-bottom: 0.5px solid rgb(219, 219, 219);
+        height: 55px;
+        .sPRTopImg {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      .sPRCenter {
+        height: 300px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        margin-top: 20px;
+      }
+      .sPRBot {
+        margin-top: 20px;
+        border-top: 0.5px solid rgb(219, 219, 219);
+        padding-top: 8px;
+
+        .sprbIcon {
+          font-size: 28px;
+          margin: 0 10px;
+        }
+      }
+      .formCommentSG {
+        margin-left: 10px;
+        margin-top: 15px;
+        border-top: 0.5px solid rgb(219, 219, 219);
+        padding-top: 10px;
+        .SGformComment {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .SGfcLeft {
+            display: flex;
+            align-items: center;
+            .fcInput {
+              margin-left: 10px;
+              border: none;
+              width: 70%;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          .fcBtn {
+            border: none;
+            background: none;
+            margin-right: 10px;
+            font-size: 16px;
+            color: rgb(0, 149, 246);
+          }
+        }
+      }
+    }
+  }
+}

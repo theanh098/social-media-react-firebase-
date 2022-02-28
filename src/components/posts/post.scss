@@ -1,0 +1,74 @@
+.postContainer {
+  padding-bottom: 20px;
+  border: 0.5px solid rgb(219, 219, 219);
+  margin-bottom: 26px;
+  width: 614px;
+  background-color: white;
+  .postTop {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    position: relative;
+    .menuPostIcon {
+      position: absolute;
+      right: 5px;
+    }
+    .postUserPhoto {
+      margin-left: 12px;
+      margin-right: 12px;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .flspan {
+      color: #1fa2f7;
+      font-size: 15px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  .postbody {
+    .postImg {
+      height: 757px;
+      width: 100%;
+      object-fit: cover;
+      border-top: 0.1px solid rgb(219, 219, 219);
+    }
+  }
+  .postContent {
+    margin-left: 15px;
+  }
+  .postComment {
+    margin-left: 10px;
+    margin-top: 15px;
+    .commentForm {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .commentFormLeft {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .commentInput {
+          margin-left: 10px;
+          border: none;
+          width: 100%;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .commentButton {
+        border: none;
+        background: none;
+        margin-right: 10px;
+        font-size: 16px;
+        color: rgb(0, 149, 246);
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.createPmodalContainer {
+  position: fixed;
+  z-index: 1000;
+  .cmpcloseBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 40px;
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .cpmOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+  }
+  .cpm {
+    width: 750px;
+    height: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    .cpmHeader {
+      height: 10%;
+      border-bottom: 0.5px solid rgb(219, 219, 219);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .cpmBody {
+      display: flex;
+      height: 90%;
+      .cpmImg {
+        width: 410px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .posterphoto {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 5;
+          position: absolute;
+        }
+        .postfileInputgg {
+          .omicron {
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+          }
+          .omicronOzon {
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            background-color: #0095f6;
+            display: inline-block;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            &:active {
+              background-color: rgba($color: #0095f6, $alpha: 0.5);
+            }
+          }
+        }
+      }
+      .cpmContent {
+        flex: 4;
+        position: relative;
+        .posterInfo {
+          display: flex;
+          align-items: center;
+          margin: 15px;
+          .posterInfoimg {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+        .postChuthich {
+          .chuthichInput {
+            border: none;
+            margin-left: 20px;
+            width: 80%;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .postway {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 10px 0;
+          border-top: 0.5px solid rgb(219, 219, 219);
+          position: absolute;
+          bottom: 5px;
+        }
+      }
+    }
+  }
+}

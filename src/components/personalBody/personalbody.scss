@@ -1,0 +1,67 @@
+.personalBody {
+  width: 935px;
+  margin: 0 auto;
+  .danhMucs {
+    display: flex;
+    height: 53px;
+    justify-content: center;
+    border-top: 0.5px solid rgb(219, 219, 219);
+
+    .danhmuc {
+      height: 100%;
+      margin-left: 20px;
+      & > * {
+        margin-top: 10px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+
+      list-style: none;
+    }
+  }
+  .baiViets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .baiviet {
+      position: relative;
+      display: flex;
+      margin-bottom: 22px;
+      .baivietImg {
+        width: 293px;
+        height: 293px;
+        object-fit: cover;
+      }
+      .heartAndComment {
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+        .overlay {
+          background-color: rgba($color: #000000, $alpha: 0.3);
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          z-index: 2;
+        }
+        .heartAndComment {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          z-index: 3;
+        }
+      }
+    }
+  }
+}
